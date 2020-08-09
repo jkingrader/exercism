@@ -1,17 +1,17 @@
 def convert(number: int = 0) -> str:
-    pass
-    # if number == 0:
-    #     raindrops_str = ""
-    # else:
-    #     raindrops = "Pling"
+    
+    raindrops_str = ""
 
-    # if number % 5 == 0
-    #     raindrops_str = raindrops_str + "Plang"
+    if number % 3 == 0:
+        raindrops_str += "Pling"
 
-    # if number % 7 == 0
-    #     raindrops_str = raindrops_str + "Plong"
+    if number % 5 == 0:
+        raindrops_str += "Plang"
 
-    # if raindrops_str == ""
-    #     raindrops_str = f{"number"}
+    if number % 7 == 0:
+        raindrops_str += "Plong"
 
-    # return raindrops_str
+    if raindrops_str == "":
+        raindrops_str = str(number)
+
+    return raindrops_str
