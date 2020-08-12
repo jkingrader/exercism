@@ -17,10 +17,6 @@ class Matrix:
         return self.matrix[index-1]
 
     def column(self, index):
-        col = []
- 
-        for row in range(0, self.num_rows):
-            col.append(self.matrix[row][index-1])
-      
-        return col
+        # return map(lambda row: row[index-1], self.matrix)
+        return (row[index-1] for row in self.matrix)
 
